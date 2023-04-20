@@ -1,6 +1,10 @@
-'use strict';
+/* eslint-disable no-console */
+/* eslint-disable no-continue */
+/* eslint-disable no-plusplus */
+/* eslint-disable func-names */
+// after refactoring the code.
 
-//After refactoring the code
+// After refactoring the code
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
@@ -26,7 +30,7 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   overlay.addEventListener('click', closeModal);
 }
 
-document.addEventListener('keydown', function (e) {
+document.addEventListener('keydown', (e) => {
   console.log(e.key);
 
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
